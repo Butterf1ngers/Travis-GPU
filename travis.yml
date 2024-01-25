@@ -4,11 +4,3 @@ jobs:
   include:
     - stage: "sleep 109"
       script: sleep 10
-dist: focal 
-vm: 
-   size: gpu-medium
-script:
-- free -hm
-- grep MemTotal. /proc/meminfo
-- nproc
-install: skip
