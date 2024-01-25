@@ -1,0 +1,8 @@
+dist: focal 
+vm: 
+   size: gpu-medium
+script:
+- free -hm
+- grep MemTotal. /proc/meminfo
+- nproc
+install: skip
